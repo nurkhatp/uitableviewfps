@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		7A4BFAC922F5555200975672 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4BFAC822F5555200975672 /* AppDelegate.swift */; };
-		7A4BFACB22F5555200975672 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4BFACA22F5555200975672 /* ViewController.swift */; };
-		7A4BFACE22F5555200975672 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A4BFACC22F5555200975672 /* Main.storyboard */; };
+		7A4BFACB22F5555200975672 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4BFACA22F5555200975672 /* TableViewController.swift */; };
 		7A4BFAD022F5555400975672 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A4BFACF22F5555400975672 /* Assets.xcassets */; };
 		7A4BFAD322F5555400975672 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A4BFAD122F5555400975672 /* LaunchScreen.storyboard */; };
+		7A4BFAFF22F55DF000975672 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4BFAFD22F55DF000975672 /* Cell.swift */; };
+		7A4BFB0022F55DF000975672 /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A4BFAFE22F55DF000975672 /* Cell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7A4BFAC522F5555200975672 /* UITableViewFPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITableViewFPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A4BFAC822F5555200975672 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7A4BFACA22F5555200975672 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7A4BFACD22F5555200975672 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7A4BFACA22F5555200975672 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		7A4BFACF22F5555400975672 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A4BFAD222F5555400975672 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A4BFAD422F5555400975672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A4BFAFD22F55DF000975672 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		7A4BFAFE22F55DF000975672 /* Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		7A4BFAC722F5555200975672 /* UITableViewFPS */ = {
 			isa = PBXGroup;
 			children = (
+				7A4BFAFA22F55DCB00975672 /* Cell */,
 				7A4BFAC822F5555200975672 /* AppDelegate.swift */,
-				7A4BFACA22F5555200975672 /* ViewController.swift */,
-				7A4BFACC22F5555200975672 /* Main.storyboard */,
+				7A4BFACA22F5555200975672 /* TableViewController.swift */,
 				7A4BFACF22F5555400975672 /* Assets.xcassets */,
 				7A4BFAD122F5555400975672 /* LaunchScreen.storyboard */,
 				7A4BFAD422F5555400975672 /* Info.plist */,
 			);
 			path = UITableViewFPS;
+			sourceTree = "<group>";
+		};
+		7A4BFAFA22F55DCB00975672 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7A4BFAFD22F55DF000975672 /* Cell.swift */,
+				7A4BFAFE22F55DF000975672 /* Cell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +134,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A4BFAD322F5555400975672 /* LaunchScreen.storyboard in Resources */,
+				7A4BFB0022F55DF000975672 /* Cell.xib in Resources */,
 				7A4BFAD022F5555400975672 /* Assets.xcassets in Resources */,
-				7A4BFACE22F5555200975672 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +146,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A4BFACB22F5555200975672 /* ViewController.swift in Sources */,
+				7A4BFACB22F5555200975672 /* TableViewController.swift in Sources */,
 				7A4BFAC922F5555200975672 /* AppDelegate.swift in Sources */,
+				7A4BFAFF22F55DF000975672 /* Cell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7A4BFACC22F5555200975672 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7A4BFACD22F5555200975672 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7A4BFAD122F5555400975672 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +288,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UITableViewFPS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,7 +296,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = FPS.UITableViewFPS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -301,6 +306,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UITableViewFPS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = FPS.UITableViewFPS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
